@@ -1,0 +1,33 @@
+{
+    "name": "videni/piwik-device-detector-bridge",
+    "type": "library",
+    "description": "piwik device detector bridge for suncat/mobile-detect-bundle ",
+    "keywords": ["piwik","device detector","mobile-detect-bundle"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vidy videni"
+        }
+    ],
+    "require": {
+        "piwik/device-detector": "^3.7",
+        "suncat/mobile-detect-bundle": "dev-decouple-device-detector"
+    },
+    "repositories": [
+        {
+            "url": "https://github.com/videni/MobileDetectBundle.git",
+            "type": "vcs"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": { "PiwikDeviceDetector\\": "src/" }
+    },
+
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
